@@ -17,14 +17,17 @@ function whileLoop(num){
     return 'done'
 }
 
-function maybeTrue() {
-  var randomNum = Math.random()
-  console.log(randomNum)
-  return randomNum >= 0.5
-}
 
-function doWhileLoop(array){
+function doWhileLoop(array) {
+  function maybeTrue() {
+    var randomNum = Math.random()
+    console.log(randomNum)
+    return randomNum >= 0.5
+  }
+
   do {
-  console.log('doo-bee-doo-bee-doo')
- } while (maybeTrue());
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
+
+  return array
 }
