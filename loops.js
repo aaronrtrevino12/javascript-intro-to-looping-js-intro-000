@@ -26,7 +26,7 @@ function doWhileLoop(array) {
   }
 
   do {
-    array = array.slice(1)
+    array = array.slice(1)  // removes first element of array
   } while (array.length > 0 && maybeTrue())
 
   return array
