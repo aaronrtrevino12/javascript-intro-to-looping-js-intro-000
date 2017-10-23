@@ -22,12 +22,12 @@ function doWhileLoop(array) {
   function maybeTrue() {
     var randomNum = Math.random()
     console.log(randomNum)
-    return randomNum >= 0.5
+    return randomNum >= 0.5  // if randomNum is greater than or equal to 0.5, then return true
   }
 
   do {
-    array = array.slice(1)  // removes first element of array
-  } while (array.length > 0 && maybeTrue())
+    array = array.slice(1)  // removes first element from array
+  } while (array.length > 0 && maybeTrue()) // while array is not empty and maybeTrue() function returns true
 
   return array
 }
