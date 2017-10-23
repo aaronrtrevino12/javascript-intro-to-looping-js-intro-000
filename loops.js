@@ -26,8 +26,9 @@ function doWhileLoop(array) {
   }
 
   do {
-    array = array.slice(1)  // removes element (first) from array without changing original array
+    array = array.slice(1)  // removes at least one element (first) from array without changing original array
   } while (array.length > 0 && maybeTrue()) // return array while array is not empty and maybeTrue() function returns true
-  // If maybeTrue() function returns false the "do-while" loop will stop and it will return the array with or without removing element(s)
+  // If maybeTrue() function returns false the "do-while" loop will stop and it will return the array with or without removing
+  // at least one element.
   return array
 }
