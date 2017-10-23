@@ -22,7 +22,7 @@ function doWhileLoop(array) {
   function maybeTrue() {
     var randomNum = Math.random()
     console.log(randomNum)
-    return randomNum >= 0.5  // if randomNum is greater than or equal to 0.5, then return true
+    return randomNum >= 0.5  // if randomNum is greater than or equal to 0.5, then returns true
   }
 
   do {
